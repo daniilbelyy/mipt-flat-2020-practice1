@@ -46,7 +46,7 @@ std::unordered_set<int> Star(const std::unordered_set<int>& first, int amount) {
 		for (auto it = ++min_it; it != first.end(); ++it) {
 			if (*it) {
 				min_number = gcd(min_number, *it);
-				if (gcd(min_number, *it) == 1) {
+				if (min_number == 1) {
 					break;
 				}
 			}
